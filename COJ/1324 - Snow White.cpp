@@ -3,7 +3,6 @@
 using namespace std;
 
 int main() {
-
     int count;
     int v[9];
     int temp;
