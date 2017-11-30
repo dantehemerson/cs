@@ -3,8 +3,6 @@
 using namespace std;
 
 int main() {
-
-
 	int H, M;
 	char temp;// para leer los 2 puntos
 

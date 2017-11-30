@@ -26,7 +26,7 @@ int main() {
 				}
 			}
 		}
-
+		
 		if(B[1] > A[2]) {
 			for(int i = A[2] + 1; i <= 52 && i < carta3; i++) {
 				if(cartas[i]) carta3 = i;
@@ -40,6 +40,7 @@ int main() {
 				}
 			}
 		}
+
 
 		cout << (carta3 == 53 ? -1 : carta3) << endl;
 
