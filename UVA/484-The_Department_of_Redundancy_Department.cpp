@@ -5,15 +5,12 @@ using namespace std;
 int main() {
 
 	map<int, int> items;
-	vector<int> itemsPos;
-	vector<int>::iterator itemsIt;
-
+	vector<int> itemsPos;	
+	
 	int num;
 	while(cin >> num) {
 		items[num]++;
-
-		itemsIt = find(itemsPos.begin(), itemsPos.end(), num);
-		if(itemsIt == itemsPos.end()) {
+		if(items[num] == 1) { // Primera vez que se agrega
 			itemsPos.push_back(num);
 		}
 	}
