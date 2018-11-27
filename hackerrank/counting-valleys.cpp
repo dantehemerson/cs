@@ -7,8 +7,7 @@ int countingValleys(int n, string s) {
     int m = 0;
     int valleyCounter = 0;
     for(int i = 0; i < n; i++) {
-        m = m + (s[i] == 'U' ? 1 : -1);
-        cout << m << endl;
+        m = m + (s[i] == 'U' ? 1 : -1);        
         if(m < 0) {
             down = true;
         }
