@@ -2,16 +2,12 @@
 
 using namespace std;
 
-int countingValleys(int n, string s) {
-    bool down = false;
+int countingValleys(int n, string s) {    
     int m = 0;
     int valleyCounter = 0;
     for(int i = 0; i < n; i++) {
-        m = m + (s[i] == 'U' ? 1 : -1);        
-        if(m < 0) {
-            down = true;
-        }
-        if(m == 0 && down && s[i] != 'D') {
+        m = m + (s[i] == 'U' ? 1 : -1);
+        if(m == 0 && s[i] != 'D' && i > 0 ) {
             valleyCounter++;
         }        
     }
