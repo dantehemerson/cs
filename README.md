@@ -9,9 +9,13 @@
 
 > Every day solves a problem
 
+### My profiles
+
+- [Codeforces](https://codeforces.com/profile/dantehemerson)
+
 ### History (Commits)
 
-| Emoji        | Description           |
-| ------------- |-------------|
-| :green_heart: | This means that the problem is solved.|
-| :heart:   | This means that the problem is not solved yet.|
+| Emoji         | Description                                    |
+| ------------- | ---------------------------------------------- |
+| :green_heart: | This means that the problem is solved.         |
+| :heart:       | This means that the problem is not solved yet. |
