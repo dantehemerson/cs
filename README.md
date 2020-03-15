@@ -1,4 +1,4 @@
-<h1 align='center'>Competitive Programming</h1>
+<h1 align='center'>Computer Science</h1>
 
 <p align="center">
   <strong>My Solutions to Competitive Programming problems in different sites.</strong><br>
