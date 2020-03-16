@@ -12,6 +12,10 @@
 ### My profiles
 
 - [Codeforces](https://codeforces.com/profile/dantehemerson)
+- [LeetCode](https://leetcode.com/dantehemerson/)
+- [Hackerrank](https://www.hackerrank.com/dantehemerson?hr_r=1)
+- [UVA - uHunt](https://uhunt.onlinejudge.org/id/840077)
+- [COJ](https://coj.uci.cu/user/useraccount.xhtml?username=dantehemerson)
 
 ### History (Commits)
 
