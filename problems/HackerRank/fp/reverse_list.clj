@@ -1,0 +1,2 @@
+(fn[lst]
+  (reverse lst))
