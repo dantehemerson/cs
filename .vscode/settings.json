@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.mdx": "markdown",
+    "ostream": "cpp",
+    "new": "cpp"
+  }
+}
