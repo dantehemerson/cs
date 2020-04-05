@@ -2,6 +2,7 @@
   "files.associations": {
     "*.mdx": "markdown",
     "ostream": "cpp",
-    "new": "cpp"
+    "new": "cpp",
+    "type_traits": "cpp"
   }
 }
