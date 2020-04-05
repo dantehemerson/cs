@@ -8,7 +8,7 @@ class Vector {
 
 public:
   Vector(size_t size): _size(size) {
-    first = new (nothrow) int[size] {1, 2,3, 4, 5, 6,7,8};
+    first = new (nothrow) int[size] {1, 2, 33, 4, 5, 6,7,999};
   }
 
   size_t size() {
@@ -40,12 +40,23 @@ public:
     return -1;
   }
 
+  int pop() {
+    int element = *(first + _size - 1);
+    _size--;
+    return element;
+  }
+
   bool isEmpty() {
     return _size == 0;
   }
 
   ~Vector() {
     delete [] first;
+  }
+
+private:
+  void resize() {
+
   }
 };
 
@@ -57,7 +68,12 @@ int main() {
   cout << "Is Empty = " << vector.isEmpty() << endl;
   cout << "Index of 6 = " << vector.find(6) << endl;
   cout << "Index of 283(doesnt exists) = " << vector.find(283) << endl;
-  cout << vector.at(2) << endl;
+  cout << "Index of 283(doesnt exists) = " << vector.size() << endl;
+  cout << "Pop " << vector.pop() << endl;
+  cout << "Pop " << vector.pop() << endl;
+  cout << "Pop " << vector.pop() << endl;
+  cout << "Pop " << vector.pop() << endl;
+  cout << "Index of 283(doesnt exists) = " << vector.size() << endl;
 
 
   return 0;
