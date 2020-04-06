@@ -67,9 +67,11 @@ public:
   }
 
   int remove(int item) {
-
     for(int i = 0; i < this->_size; i++) {
-      continue;
+      if(item == arr[i]) {
+        this->deleteItem(i);
+        i--;
+      }
     }
 
     return item;
@@ -129,17 +131,14 @@ int main() {
   vector.listElements();
   vector.push(1);
   vector.push(3);
-  vector.push(90);
+  vector.push(5);
   vector.push(4);
   vector.push(5);
   vector.push(6);
   vector.push(7);
-  vector.listElements();
-  vector.insert(9, 123456);
-  vector.prepend(999);
+    vector.listElements();
 
-  vector.listElements();
-  vector.deleteItem(2);
+  vector.remove(5);
   vector.listElements();
 
 
