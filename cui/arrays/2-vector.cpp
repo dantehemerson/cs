@@ -25,7 +25,6 @@ public:
   }
 
   int push(int item) {
-    cout << this->_size << " " << this->_capacity << endl;
     if(this->_size == this->_capacity) {
       // Resize to double capacity
       resize(this->_capacity *= 2);
@@ -37,10 +36,43 @@ public:
     return item;
   }
 
-  int deleteItem(size_t index) {
+  int insert(int index, int item) {
+    if(this->_size == this->_capacity) {
+      // Resize to double capacity
+      resize(this->_capacity *= 2);
+    }
+    for(int i = this->_size - 1; i >= index; i--) {
+      arr[i + 1] = arr[i];
+    }
+    arr[index] = item;
+    this->_size++;
+
+    return arr[index];
+  }
+
+  int prepend(int item) {
+    return this->insert(0, item);
+  }
+
+  int deleteItem(int index) {
     int tmp = *(arr + index);
 
+    for(int i = index; i < this->_size; i++) {
+      arr[i] = arr[i + 1];
+    }
+
+    this->_size--;
+
     return tmp;
+  }
+
+  int remove(int item) {
+
+    for(int i = 0; i < this->_size; i++) {
+      continue;
+    }
+
+    return item;
   }
 
   int find(int item) {
@@ -66,7 +98,7 @@ public:
     for(int i = 0; i < _size; i++) {
       cout << arr[i] << ", ";
     }
-    cout << endl;
+    cout << "   size = " << this->size() << endl;
   }
 
   bool isEmpty() {
@@ -94,23 +126,21 @@ int main() {
   Vector vector(2);
 
   cout << "Size = " << vector.size() << endl;
- vector.listElements();
- vector.push(1);
- vector.push(3);
- vector.push(90);
- vector.push(4);
- vector.push(5);
- vector.push(6);
- vector.push(7);
- vector.listElements();
- vector.pop();
- vector.pop();
- vector.pop();
- vector.pop();
- vector.pop();
- vector.pop();
- vector.pop();
- vector.listElements();
+  vector.listElements();
+  vector.push(1);
+  vector.push(3);
+  vector.push(90);
+  vector.push(4);
+  vector.push(5);
+  vector.push(6);
+  vector.push(7);
+  vector.listElements();
+  vector.insert(9, 123456);
+  vector.prepend(999);
+
+  vector.listElements();
+  vector.deleteItem(2);
+  vector.listElements();
 
 
   return 0;
