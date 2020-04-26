@@ -9,7 +9,6 @@ abstract class Creator {
   }
 }
 
-
 class ConcreteCreator1 extends Creator {
   public factoryMethod(): Product {
     return new ConcreteProduct1()
