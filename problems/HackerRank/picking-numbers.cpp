@@ -16,20 +16,19 @@ vector<string> split(const string &);
 int pickingNumbers(vector<int> a) {
     sort(a.begin(), a.end());
     
-    int m = a[0], u = a[0];
+    // Supose we have an array, but we only store the first and last item
+    int firstItem = a[0], lastItem = a[0];
     int largest = 0;
     int counter = 1;
     for(size_t i = 1; i < a.size(); i++) {
-        int lastU = u;
-        
-        u = a[i];
-        if(a[i] - lastU <= 1 && a[i] - m <= 1) {
+        if(a[i] - lastItem <= 1 && a[i] - firstItem <= 1) {
             counter++;
             if(counter > largest) largest = counter;
         } else {
-            m = a[i];
+            firstItem = a[i];
             counter = 1;
         }
+        lastItem = a[i];
     }
 
     return largest;
