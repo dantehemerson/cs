@@ -6,6 +6,7 @@ using namespace std;
 string encryption(string s) {
     // Remove spaces
     s.erase(remove(s.begin(), s.end(), ' '), s.end());
+
     int r = floor(sqrt(s.size()));
     int c = ceil(sqrt(s.size()));
     
@@ -14,11 +15,10 @@ string encryption(string s) {
         for(int j = i; j < s.size(); j += c) {
             encoded += s[j];
         }
-        // If I remove the conditional it still pass
+        // If I remove the conditional, it still pass
         if(i != c - 1) encoded += " ";
     }
-    
-    
+
     return encoded;
 }
 
