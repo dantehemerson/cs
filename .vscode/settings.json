@@ -4,5 +4,6 @@
     "ostream": "cpp",
     "new": "cpp",
     "type_traits": "cpp"
-  }
+  },
+  "editor.formatOnSave": false
 }
