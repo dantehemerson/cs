@@ -5,8 +5,11 @@ public:
         
         for(char const &c: sentence) {
             charsInSentence.insert(c);
+            
+            // Early return
+            if(charsInSentence.size() == 26) return true;
         }
         
-        return charsInSentence.size() == 26;
+        return false;
     }
 };
