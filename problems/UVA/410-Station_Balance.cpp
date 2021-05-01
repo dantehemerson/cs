@@ -2,7 +2,18 @@
 
 using namespace std;
 
+void FAST_IO()
+{
+    ios_base::sync_with_stdio(0);
+    //cin.tie(NULL);
+    //cout.tie(NULL);
+    cout.setf(ios::fixed);
+    cout.precision(5);
+}
+
 int main() {
+
+  FAST_IO();
   int times = 0;
   short C, S;
   vector<short> M;
@@ -12,10 +23,14 @@ int main() {
     M.clear();
 
     short Mi;
+    float average = 0;
     for(size_t i = 0; i < S; i++) {
       cin >> Mi;
       M.push_back(Mi);
+      average += Mi;
     }
+    /** calculate average */
+    average /= C;
 
     sort(M.begin(), M.end());
 
@@ -23,12 +38,6 @@ int main() {
     vector<short> zeros(2 * C - S, 0);
     M.insert(M.begin(), zeros.begin(), zeros.end());
 
-    /** calculate average */
-    float average = 0;
-    for(size_t i = 0; i < C; i++) {
-      average += M[i] + M[M.size() - 1 - i];
-    }
-    average /= C;
 
     /** Calculate imbalance & Print result */
     cout << "Set #" << times << endl;
@@ -48,3 +57,4 @@ int main() {
 
   return 0;
 }
+
