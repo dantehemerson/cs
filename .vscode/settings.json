@@ -3,7 +3,8 @@
     "*.mdx": "markdown",
     "ostream": "cpp",
     "new": "cpp",
-    "type_traits": "cpp"
+    "type_traits": "cpp",
+    "iomanip": "cpp"
   },
   "editor.formatOnSave": false
 }
