@@ -4,7 +4,8 @@
     "ostream": "cpp",
     "new": "cpp",
     "type_traits": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "iostream": "cpp"
   },
   "editor.formatOnSave": false
 }
