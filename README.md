@@ -1,7 +1,7 @@
 <h1 align='center'>Computer Science</h1>
 
 <p align="center">
-  <strong>Algorithms and Competitive Problems Solved</strong><br>
+  <strong>Algorithms and Solved Problems</strong><br>
 </p>
 <p align='center'>
   <img src='http://academic.uprm.edu/computersociety/images/events/competitive-programming.png' />
