@@ -10,9 +10,9 @@ public:
           if(maxLen > largest) {
             largest = maxLen;
             count = 0;
+          } else if(maxLen == largest) {
+            count++;
           }
-          
-          if(maxLen == largest) count++;
         }
       
         return count;
