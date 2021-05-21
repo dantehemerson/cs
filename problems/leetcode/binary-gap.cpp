@@ -1,3 +1,5 @@
+// Runtime: 0 ms, faster than 100.00% of C++ online submissions for Binary Gap.
+// Memory Usage: 5.7 MB, less than 95.69% of C++ online submissions for Binary Gap.
 class Solution {
 public:
     int binaryGap(int n) {
