@@ -67,3 +67,37 @@ public:
         return result;
     }
 };
+
+
+// Third solution, improving the first solution using string.erase
+// https://leetcode.com/submissions/detail/503505591/
+class Solution {
+public:
+    string removeDuplicates(string s, int k) {
+      string result = "";
+      int count = 0;
+      stack<int> prevCounts;
+      
+      for(size_t i = 0; i < s.size(); i++) {
+        if(!result.empty() && s[i] != result.back()) {
+          prevCounts.push(count);
+          // Restart counter on different char and save it on stack
+          count = 1;
+        } else {
+         count++;
+        }
+        result.push_back(s[i]);
+        
+        if(count == k) {
+          result.erase(result.size() - k, k);
+          count = 0;
+          if(!prevCounts.empty()) {
+              count = prevCounts.top();
+              prevCounts.pop();
+          }
+        }
+      }
+
+      return result;
+    }
+};
