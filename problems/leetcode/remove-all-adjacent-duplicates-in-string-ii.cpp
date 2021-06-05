@@ -34,3 +34,36 @@ public:
       return result;
     }
 };
+
+
+
+
+// Second Solution with pair and stack.
+// Runtime: 32 ms, faster than 23.78% of C++ online submissions for Remove All Adjacent Duplicates in String II.
+// Memory Usage: 132.5 MB, less than 9.33% of C++ online submissions for Remove All Adjacent Duplicates in String II.
+class Solution {
+public:
+    string removeDuplicates(string s, int k) {
+        string result = "";
+        stack<pair<char, int>> pila;
+        for(const char &c: s) {
+           if(!pila.empty() && c == pila.top().first) {
+             if(pila.top().second == k - 1) { // found k repeated chars, then delete them
+               pila.pop();
+             } else {
+               pila.top().second++;
+             }
+           } else {
+             pila.push(make_pair(c, 1));
+           }
+        }
+      
+        while(!pila.empty()) {
+          result = string(pila.top().second, pila.top().first) + result;
+          pila.pop();
+        
+        }
+        
+        return result;
+    }
+};
