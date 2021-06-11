@@ -5,7 +5,8 @@
     "new": "cpp",
     "type_traits": "cpp",
     "iomanip": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "vector": "cpp"
   },
   "editor.formatOnSave": false
 }
