@@ -1,3 +1,4 @@
+/** Sliding Window like */
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) { 
