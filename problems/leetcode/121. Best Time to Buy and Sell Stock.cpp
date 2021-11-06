@@ -5,10 +5,10 @@ public:
         int min = prices[0];
       
         for(int i = 1; i < prices.size(); i++) {
-          if(prices[i] > min) {
-            if(prices[i] - min > profit) profit = prices[i] - min;
-          } else {
-            min = prices[i];
+          if(prices[i] <= min) {
+             min = prices[i];
+          } else if(prices[i] - min > profit) {
+            profit = prices[i] - min;
           }
         }
       
