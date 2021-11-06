@@ -1,3 +1,6 @@
+/**
+* 2 pointer solution is actually a better solution, but we need the vectors sorted, which increase complexity. 
+*/
 class Solution {
 public:
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
