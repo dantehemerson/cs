@@ -1,4 +1,5 @@
 /**
+Most optim solution
  * Definition for singly-linked list.
  * struct ListNode {
  *     int val;
@@ -55,5 +56,39 @@ public:
       }
       
       return head;
+    }
+};
+
+
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ 
+ Runtime: 20 ms, faster than 84.73% of C++ online submissions for Remove Linked List Elements.
+Memory Usage: 15.1 MB, less than 43.45% of C++ online submissions for Remove Linked List Elements.
+ */
+class Solution {
+public:
+    ListNode* removeElements(ListNode* head, int val) {
+     ListNode* dummy = new ListNode;
+        dummy -> next = head;
+        ListNode* curr = dummy;
+        
+        while(curr -> next) {
+            if(curr -> next -> val == val) {
+                curr -> next = curr -> next -> next;
+            } else {
+                curr = curr -> next;
+            }
+        }
+        
+        return dummy -> next;
     }
 };
