@@ -29,3 +29,31 @@ public:
       return head;
     }
 };
+
+
+/**
+Runtime: 24 ms, faster than 56.37% of C++ online submissions for Remove Linked List Elements.
+Memory Usage: 15 MB, less than 79.22% of C++ online submissions for Remove Linked List Elements.
+*/
+class Solution {
+public:
+    ListNode* removeElements(ListNode* head, int val) {
+      if(!head) return nullptr;
+      
+      ListNode* prev = head;
+      ListNode* it = head;
+      
+      while(it) {
+        if(it->val == val) {
+          if(it == head) {
+            prev = head = it->next;
+          } else {
+            prev->next = it->next; 
+          }
+        } else prev = it;
+        it = it->next;
+      }
+      
+      return head;
+    }
+};
