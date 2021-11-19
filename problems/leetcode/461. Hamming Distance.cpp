@@ -11,3 +11,16 @@ public:
         return  counter;
     }
 };
+
+class Solution {
+public:
+    int hammingDistance(int x, int y) {
+        int counter = 0;
+        int n = x ^ y; // xor
+        while (n) {
+          counter++;
+          n &= n - 1;
+        }
+        return  counter;
+    }
+};
