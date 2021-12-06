@@ -11,14 +11,14 @@ Al ejecutar el método debería devolver lo siguiente:
 const regalos = listGifts(carta)
 
 console.log(regalos)
-/*
+
 {
   bici: 2,
   coche: 2,
   balón: 1,
   peluche: 1
 }
-*/
+
 Ten en cuenta que los tests pueden ser más exhaustivos... 😝 ¡Cuidado con contar espacios vacíos!
 */
 
