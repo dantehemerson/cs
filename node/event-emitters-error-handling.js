@@ -7,9 +7,8 @@ ee1.on('something', async (value) => {
 });
 
 ee1.on('error', error => {
-
   console.log('Carritooooos', error)
-});
+})
 
 
 // ee1.emit('something')
