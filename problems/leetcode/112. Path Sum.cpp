@@ -11,14 +11,9 @@
  */
 class Solution {
 public:
-    TreeNode* searchBST(TreeNode*& root, int& val) {
-        if(!root) return nullptr;
-        if(root->val == val) return root;
-        
-        
-        auto leftSearch = searchBST(root->left, val);
-        if(leftSearch) return leftSearch;
-        
-        return searchBST(root->right, val) ;
+    bool hasPathSum(TreeNode *root, int sum) {
+        if (!root) return false;
+        if (root->val == sum && !root->left && !root->right) return true;
+        return hasPathSum(root->left, sum-root->val) || hasPathSum(root->right, sum-root->val);
     }
 };
