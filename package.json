@@ -1,0 +1,23 @@
+{
+  "name": "cs",
+  "version": "1.0.0",
+  "description": "<h1 align='center'>Computer Science</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dantehemerson/cs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dantehemerson/cs/issues"
+  },
+  "homepage": "https://github.com/dantehemerson/cs#readme",
+  "dependencies": {
+    "deep-clone": "^3.0.3"
+  }
+}
