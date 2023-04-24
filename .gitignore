@@ -217,7 +217,3 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-node_modules/.yarn-integrity
-node_modules/deep-clone/package.json
-node_modules/deep-clone/package.json
-node_modules/deep-clone/package.json
