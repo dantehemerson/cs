@@ -52,6 +52,11 @@ float y{3.14f}; // y = 3.14
 // Fixed size vector
 std::vector<int> myVector(10); // Create vector of fixed size 10
 
+
+// Fixed matrix, vector of vector
+std::vector<std::vector<int>> nums(10, std::vector<int>());
+
+
 // Iterate
 
 // iterate over a map
