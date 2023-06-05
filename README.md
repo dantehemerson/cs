@@ -49,8 +49,43 @@ int count[26] = {0};
 
 float y{3.14f}; // y = 3.14
 
+// Fixed size vector
+std::vector<int> myVector(10); // Create vector of fixed size 10
 
-// LAMBDAS
+// Iterate
+
+// iterate over a map
+for (auto& x: m) {
+    std::cout << x.first << ": " << x.second << std::endl;
+}
+
+
+// use always unorderd_map instead of map, except when you need to iterate over the map in order
+// Note: map order by key
+unordered_map<int, int> counter;
+
+// emplace_back vs push_back
+keyValueVector.emplace_back(pair.first, pair.second); // pass the params to the contructor
+// the same as:
+keyValueVector.push_back(std::make_pair(pair.first, pair.second));
+
+
+// Created vector from map
+// Copy the key-value pairs to a vector
+    std::vector<std::pair<int, std::string>> sortedPairs(myMap.begin(), myMap.end());
+
+// BETTER SOLUTION TO:
+
+// Convert map to vector to allow sorting
+std::vector<std::pair<int, std::string>> keyValueVector;
+// Convert map to vector of key-value pairs
+for (const auto& pair : myMap) {
+    keyValueVector.emplace_back(pair.first, pair.second);
+}
+
+
+
+// LAMBDAS, SORT
 
 // sort by second element
 // example 1:
@@ -79,6 +114,11 @@ std::for_each(g.begin(), g.end(), [](char& c) // modify in-place
 
 // number to string
 std::to_string(10); // "10"
+
+
+// no named vector
+// Return n first items of vector
+return vector<int>(result.begin(), result.begin() + k);
 
 
 ```
