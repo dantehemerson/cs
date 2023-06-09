@@ -74,7 +74,6 @@ keyValueVector.emplace_back(pair.first, pair.second); // pass the params to the 
 // the same as:
 keyValueVector.push_back(std::make_pair(pair.first, pair.second));
 
-
 // Created vector from map
 // Copy the key-value pairs to a vector
     std::vector<std::pair<int, std::string>> sortedPairs(myMap.begin(), myMap.end());
