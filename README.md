@@ -45,6 +45,24 @@ for (string str: strs)
 int count[26] = {0};
 
 
+// Map from array: This is bettern thatn using a set, easly find.
+unordered_map<int, bool> hashNums;
+for(int& num: nums) {
+    hashNums.emplace(num, true);
+}
+
+
+// Accessing to map:
+// 1. Using the [] operator on an unordered_map adds a new item with the specified key if it doesn't already exist, even when reading.
+// 2. Accessing a non-existent key with [] initializes the value to a default-initialized value (e.g., 0 for int) and returns a reference to it.
+// 3. To check if a key exists in the map without modifying it, use the count() or find() functions instead of the [] operator.
+
+// example: Use find:
+// hashNums.find(1) ==  hashNums.end()
+// otherwise if we use hashNums[1], it will add a new item with the specified key if it doesn't already exist
+
+
+
 // Initialization
 
 float y{3.14f}; // y = 3.14
@@ -53,15 +71,30 @@ float y{3.14f}; // y = 3.14
 std::vector<int> myVector(10); // Create vector of fixed size 10
 
 
+// Map 
+
+
 // Fixed matrix, vector of vector
 std::vector<std::vector<int>> nums(10, std::vector<int>());
 
+// Set from an array  
+std::set<int> mySet(vec.begin(), vec.end());
 
 // Iterate
 
 // iterate over a map
 for (auto& x: m) {
     std::cout << x.first << ": " << x.second << std::endl;
+}
+
+// Iterate over a set
+for (const auto& element : mySet) {
+  std::cout << element << " ";
+}
+// or:
+std::set<int>::iterator it;
+for (it = mySet.begin(); it != mySet.end(); ++it) {
+    std::cout << *it << " ";
 }
 
 
