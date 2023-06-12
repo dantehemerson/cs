@@ -8,6 +8,18 @@
 </p>
 
 
+
+## Sorting Algorithms
+
+| Algorithm | Time Complexity | Space Complexity | Stable |
+| --------- | --------------- | ---------------- | ------ |
+| Bubble    | O(n^2)          | O(1)             | Yes    |
+| Insertion | O(n^2)          | O(1)             | Yes    |
+| Selection | O(n^2)          | O(1)             | No     |
+| Merge     | O(n log(n))     | O(n)             | Yes    |
+| Quick     | O(n log(n))     | O(log(n))        | No     |
+| Heap      | O(n log(n))     | O(1)             | No     |
+
 ### Cheatsheets:
 
 **CPP**:
