@@ -33,7 +33,7 @@ https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%
 Create table with columns: Operation, Description
 
 | Operation | Description | Time Complexity | Space Complexity |
-| ------------- | ---------------------------------------------- |
+| ------------- | ---------------------------------------------- | --------------- | ---------------- |
 | `swap(a, b)` | Swaps the values of a and b. | | |
 | **Vectors** | | | |
 | `vector<int> v{1, 2}` <br/> `vector<int> v = {1, 2}` | Initializes a vector with the given values. | | |
@@ -41,7 +41,8 @@ Create table with columns: Operation, Description
 | `to_string(12.05)` | Converts the number to a string. | | |
 | `s.substr(start_index=m, length=n)` | Returns a substring of n characters starting at index m. | | |
 | **Maps** | | | |
-| `m.find(key) == m.end()` | Returns true if the key is not found in the map. | | |
+| `m.find(key) == m.end()` | Returns true if the **key is not found** in the map. | | |
+
 
 
 
