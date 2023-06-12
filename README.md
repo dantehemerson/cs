@@ -35,7 +35,7 @@ Create table with columns: Operation, Description
 | Operation | Description |
 | ------------- | ---------------------------------------------- |
 | `swap(a, b)` | Swaps the values of a and b. |
-| **strings** | |
+| **Strings** | |
 | `to_string(12.05)` | Converts the number to a string. |
 | `substr(start_index=m, length=n)` | Returns a substring of n characters starting at index m. |
 
