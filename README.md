@@ -35,6 +35,8 @@ Create table with columns: Operation, Description
 | Operation | Description |
 | ------------- | ---------------------------------------------- |
 | `swap(a, b)` | Swaps the values of a and b. |
+| **Vectors** | |
+| `vector<int> v{1, 2, 3, 4, 5}` <br/> `vector<int> v = {1, 2, 3, 4, 5}` | Initializes a vector with the given values. |
 | **Strings** | |
 | `to_string(12.05)` | Converts the number to a string. |
 | `s.substr(start_index=m, length=n)` | Returns a substring of n characters starting at index m. |
