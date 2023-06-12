@@ -16,6 +16,16 @@ https://github.com/ar-pavel/CP-CheatSheet
 
 https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md
 
+
+
+Create table with columns: Operation, Description
+
+| Operation | Description |
+| ------------- | ---------------------------------------------- |
+| `swap(a, b)` | Swaps the values of a and b. |
+
+
+
 ```cpp
 
 // ===== Maps
