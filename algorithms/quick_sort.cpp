@@ -1,19 +1,11 @@
-#include <iostream>
-#include <istream>
-#include <unordered_map>
-#include <string>
-
-using namespace std;
-
+#include <bits/stdc++.h>
 
 void quickSort() {
 
 }
 
 int main() {
-  unordered_map<string, int> map;
-
-  cout << to_string(12.05).substr(0, 5) << endl;
+  vector<int> vector = {1, 2, 3, 4, 5};
 
   return 0;
 }
