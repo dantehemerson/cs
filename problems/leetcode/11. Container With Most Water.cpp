@@ -7,8 +7,8 @@ public:
         int maxArea = 0;
 
         while (L < R) {
-            int currentMax = (R - L) * min(height[L], height[R]);
-            maxArea = max(maxArea, currentMax);
+            int currentArea = (R - L) * min(height[L], height[R]);
+            maxArea = max(maxArea, currentArea);
 
             if (height[L] < height[R]) L++;
             else R--; 
