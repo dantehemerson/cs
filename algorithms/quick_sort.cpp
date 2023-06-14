@@ -5,14 +5,11 @@ void quickSort() {
 }
 
 int main() {
-  vector<int> vector{1, 2, 3, 4, 5};
+  vector<int> v{1, 2, 3, 4, 5};
 
 
-  for (int i = 0; i < vector.size(); i++) {
-    cout << vector[i] << " ";
+  for (int i = 0; i < v.size(); i++) {
   }
-
-  cout << endl;
 
   return 0;
 }

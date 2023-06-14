@@ -35,6 +35,9 @@ Create table with columns: Operation, Description
 | Operation | Description | Time Complexity | Space Complexity |
 | ------------- | ---------------------------------------------- | ------------ | ------------- |
 | `swap(a, b)` | Swaps the values of a and b. | | |
+| **Algorithm** | | | |
+| `min(a, b)` | Returns the minimum of a and b. | | |
+| `max(a, b)` | Returns the maximum of a and b. | | |
 | **Vectors** | | | |
 | `vector<int> v{1, 2}` <br/> `vector<int> v = {1, 2}` | Initializes a vector with the given values. | | |
 | **Strings** | | | |
@@ -62,8 +65,8 @@ for (const auto& pair : myMap) {
 
 // ==== Loops
 
-// for of 
-for (string str: strs) 
+// for of
+for (string str: strs)
 
 
 
@@ -99,13 +102,13 @@ float y{3.14f}; // y = 3.14
 std::vector<int> myVector(10); // Create vector of fixed size 10
 
 
-// Map 
+// Map
 
 
 // Fixed matrix, vector of vector
 std::vector<std::vector<int>> nums(10, std::vector<int>());
 
-// Set from an array  
+// Set from an array
 std::set<int> mySet(vec.begin(), vec.end());
 
 // Iterate
