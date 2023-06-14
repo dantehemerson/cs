@@ -12,7 +12,7 @@
   // To support intellisense for C++17:
   "clangd.arguments": [
     "--header-insertion=never",
-    "--header-insertion-decorators=0",
-    "--std=c++17"
-  ]
+    "--header-insertion-decorators=0"
+  ],
+  "clangd.fallbackFlags": [ "-std=c++17" ]
 }
