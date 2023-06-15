@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 
-vector<int> quickSort(vector<int>& arr) {
+vector<int> quickSort(vector<int> arr) {
   if (arr.size() <= 1) return arr;
 
   int pivot = arr[0];
