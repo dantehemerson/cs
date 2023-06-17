@@ -40,6 +40,11 @@ Create table with columns: Operation, Description
 | `max(a, b)` | Returns the maximum of a and b. | | |
 | **Vectors** | | | |
 | `vector<int> v{1, 2}` <br/> `vector<int> v = {1, 2}` | Initializes a vector with the given values. | | |
+| `v.empty()` | Returns `true` or `false` depending on whether the vector is empty. | | |
+| `v.back()` | Returns the last element of the vector. Similar to `v[v.size() - 1]`. | | |
+| `v.front()` | Returns the first element of the vector. Similar to `v[0]`. | | |
+| `v.pop_back(val)` | Removes the last element of the vector. | | |
+| `v.push_front(val)` | Adds a new element to the beginning of the vector. | | |
 | **Strings** | | | |
 | `to_string(12.05)` | Converts the number to a string. | | |
 | `s.substr(start_index=m, length=n)` | Returns a substring of n characters starting at index m. | | |
