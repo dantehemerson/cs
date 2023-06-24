@@ -47,6 +47,8 @@ Create table with columns: Operation, Description
 | `v.pop_back(val)` | Removes the last element of the vector. | | |
 | `v.push_front(val)` | Adds a new element to the beginning of the vector. | | |
 | **Stacks** | | | |
+| `s.empty()` | Returns `true` or `false` depending on whether the stack is empty. | | |
+| `s.top()` | Returns the top element of the stack. | | |
 | `s.push(val)` | Adds a new element to the top of the stack. | | |
 | `s.emplace(1, 2)` | Similar to `s.push(make_pair(1, 2))`, or pass the params to any constructor. | | |
 | **Strings** | | | |
@@ -56,6 +58,7 @@ Create table with columns: Operation, Description
 | `s.pop_back()` | Removes the last character of the string. | | |
 | **Maps**(`unordered_map`) | | | |
 | `m.find(key) == m.end()` | Returns true if the **key is not found** in the map. | `O(1)` | `O(1)` |
+| `if (m.cunt(key))` | Returns > 1 if the **key is found** in the map, or `0` if not found | `O(1)` | `O(1)` |
 
 
 ```cpp
