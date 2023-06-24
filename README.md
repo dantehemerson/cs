@@ -46,6 +46,9 @@ Create table with columns: Operation, Description
 | `v.front()` | Returns the first element of the vector. Similar to `v[0]`. | | |
 | `v.pop_back(val)` | Removes the last element of the vector. | | |
 | `v.push_front(val)` | Adds a new element to the beginning of the vector. | | |
+| **Stacks** | | | |
+| `s.push(val)` | Adds a new element to the top of the stack. | | |
+| `s.emplace(1, 2)` | Similar to `s.push(make_pair(1, 2))`, or pass the params to any constructor. | | |
 | **Strings** | | | |
 | `to_string(12.05)` | Converts the number to a string. | | |
 | `s.substr(start_index=m, length=n)` | Returns a substring of n characters starting at index m. | | |
