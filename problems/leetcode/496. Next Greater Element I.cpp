@@ -5,6 +5,7 @@ public:
         stack<int> s;
         unordered_map<int, int> gt;
 
+      // Monotonic stack
         for (int i = 0; i < nums2.size(); i++) {
             while (!s.empty() && s.top() < nums2[i]) {
                 gt[s.top()] = nums2[i];
@@ -15,6 +16,7 @@ public:
         }
 
 
+         // HashMap
         vector<int> result(nums1.size(), -1);
         for (int i = 0; i < nums1.size(); i++)  {
             if(gt.count(nums1[i])) {
