@@ -48,6 +48,8 @@ Create table with columns: Operation, Description
 | **Strings** | | | |
 | `to_string(12.05)` | Converts the number to a string. | | |
 | `s.substr(start_index=m, length=n)` | Returns a substring of n characters starting at index m. | | |
+| `s.push_back('a')` | Adds a new character to the end of the string. | | |
+| `s.pop_back()` | Removes the last character of the string. | | |
 | **Maps**(`unordered_map`) | | | |
 | `m.find(key) == m.end()` | Returns true if the **key is not found** in the map. | `O(1)` | `O(1)` |
 

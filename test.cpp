@@ -3,10 +3,8 @@
 using namespace std;
 
 int main() {
-  int a;
+  cout << "hello" << endl;
 
-  cin >> a;
-	cout << bool(4 & (1 << 2)) << endl;
 
 	return 0;
 }
