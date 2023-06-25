@@ -59,7 +59,11 @@ Create table with columns: Operation, Description
 | `s.pop_back()` | Removes the last character of the string. | | |
 | **Maps**(`unordered_map`) | | | |
 | `m.find(key) == m.end()` | Returns true if the **key is not found** in the map. | `O(1)` | `O(1)` |
-| `if (m.cunt(key))` | Returns > 1 if the **key is found** in the map, or `0` if not found | `O(1)` | `O(1)` |
+| `if (m.count(key))` | Returns > 1 if the **key is found** in the map, or `0` if not found | `O(1)` | `O(1)` |
+| **Sets** | | | |
+| `s.insert(val)` | Inserts a new value to the set | | |
+| `s.erase(val)` | Deleted a value to the set | | |
+| `s.count(val)` | Returns > 1 if the **`val` is found** in the set, or `0` if not found | `O(1)` | `O(1)` |
 
 
 ```cpp
