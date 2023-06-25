@@ -46,6 +46,7 @@ Create table with columns: Operation, Description
 | `v.front()` | Returns the first element of the vector. Similar to `v[0]`. | | |
 | `v.pop_back(val)` | Removes the last element of the vector. | | |
 | `v.push_front(val)` | Adds a new element to the beginning of the vector. | | |
+| `sort(v.begin(), v.end())` | Sorts the vector. In `vector<pair<A, B>>`, by default it sorts by the first element of pairs. | | |
 | **Stacks** | | | |
 | `s.empty()` | Returns `true` or `false` depending on whether the stack is empty. | | |
 | `s.top()` | Returns the top element of the stack. | | |
