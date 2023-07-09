@@ -17,19 +17,18 @@ public:
         return isPalindromeRec(head, rightIt);
     }
     
+    // receive head by reference, so we can modify it in recursive stack
     bool isPalindromeRec(ListNode*& head, ListNode* rightIt) {
         if (rightIt == nullptr) {
             return true;
         }
         
-        int rightVal = rightIt->val;
-        bool pal = isPalindromeRec(head, rightIt->next);
-        bool current = head->val == rightVal;
-
+        bool current = isPalindromeRec(head, rightIt->next) && head->val == rightIt->val;
         head = head->next;
 
-        return current && pal;
+        return current;
     }
 };
 
 // TODO: Do it with Reverse Second Half In-place next time
+https://leetcode.com/problems/palindrome-linked-list/solutions/1137027/js-python-java-c-easy-floyd-s-reversal-solution-w-explanation/
