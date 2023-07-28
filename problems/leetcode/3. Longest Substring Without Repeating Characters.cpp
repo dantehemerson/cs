@@ -44,3 +44,27 @@ public:
         return MAX;
     }
 }
+
+// Better
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        unordered_set<char> S;
+
+        int l = 0;
+        int M = 0;
+        for (int i = 0; i < s.size(); i++) {
+            // erase left items
+            while (S.count(s[i])) {
+                S.erase(s[l]);
+                l++;
+            }
+
+            S.insert(s[i]);
+
+            M = max(M, i - l + 1);
+        }
+
+        return M;
+    }
+};
