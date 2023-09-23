@@ -38,6 +38,7 @@ Create table with columns: Operation, Description
 | **Algorithm** | | | |
 | `min(a, b)` | Returns the minimum of a and b. | | |
 | `max(a, b)` | Returns the maximum of a and b. | | |
+| `max_element(v.begin(), v.end(), [](int a, int b) { return a < b; })` | Returns an iterator pointing to the element with the largest value in the vector. | `O(n)` | `O(1)` |
 | **Vectors** | | | |
 | `vector<int> v{1, 2}` <br/> `vector<int> v = {1, 2}` | Initializes a vector with the given values. | | |
 | `vector<int> v(n, 1)` | Initializes a vector of size `n` with all values set to `1`. | | |
