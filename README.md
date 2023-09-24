@@ -28,9 +28,23 @@ https://github.com/ar-pavel/CP-CheatSheet
 
 https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md
 
+Table with cpp types and their size and range in  a table:
+
+| Type | Size (bytes) | Range |
+| ---- | ------------ | ----- |
+| short | 2 | -2^15 to 2^15 - 1 |
+| int  | 4            | -2^31 to 2^31 - 1 |
+| unsigned int | 4 | 0 to 2^32 - 1 |
+| long long | 8 | -2^63 to 2^63 - 1 |
+| unsigned long long | 8 | 0 to 2^64 - 1 |
+| float | 4 | 1.2E-38 to 3.4E+38 |
+| double | 8 | 2.3E-308 to 1.7E+308 |
+| long double | 16 | 3.4E-4932 to 1.1E+4932 |
+| char | 1 | -128 to 127 |
+| unsigned char | 1 | 0 to 255 |
+| bool | 1 | true or false |
 
 
-Create table with columns: Operation, Description
 
 | Operation | Description | Time Complexity | Space Complexity |
 | ------------- | ---------------------------------------------- | ------------ | ------------- |
