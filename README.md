@@ -20,6 +20,11 @@
 | Quick     | O(n log(n))     | O(log(n))        | No     |
 | Heap      | O(n log(n))     | O(1)             | No     |
 
+
+## Tips
+
+* Be careful when reassigning a variable, use references instead, to avoid TLE.
+
 ### Cheatsheets:
 
 **CPP**:
