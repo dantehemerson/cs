@@ -63,6 +63,11 @@ Table with cpp types and their size and range in  a table:
 | `v.pop_back(val)` | Removes the last element of the vector. | | |
 | `v.push_front(val)` | Adds a new element to the beginning of the vector. | | |
 | `sort(v.begin(), v.end())` | Sorts the vector. In `vector<pair<A, B>>`, by default it sorts by the first element of pairs. | | |
+| **Tuple** | | | |
+| `tuple<int, int, int> t{1, 2, 3}` | Initializes a tuple with the given values. | | |
+| `tuple<int, int, int> t = {1, 2, 3}` | Initializes a tuple with the given values. | | |
+| `make_tuple(1, 2, 3)` | (No member function) Creates a tuple with the given values. | | |
+| `get<0>(t)` |(No member function) Returns the first element of the tuple. | | |
 | **Stacks** | | | |
 | `s.empty()` | Returns `true` or `false` depending on whether the stack is empty. | | |
 | `s.top()` | Returns the top element of the stack. | | |
@@ -75,7 +80,7 @@ Table with cpp types and their size and range in  a table:
 | `s.pop_back()` | Removes the last character of the string. | | |
 | **Maps**(`unordered_map`) | | | |
 | `m.find(key) == m.end()` | Returns true if the **key is not found** in the map. | `O(1)` | `O(1)` |
-| `m.emplace` (C++11) | Inserts a new key-value pair into the map. | `O(1)` | `O(1)` |
+| `m.emplace(key, value)` (C++11) | Inserts a new key-value pair into the map. | `O(1)` | `O(1)` |
 | `if (m.count(key))` | Returns > 1 if the **key is found** in the map, or `0` if not found | `O(1)` | `O(1)` |
 | **Sets** | | | |
 | `s.insert(val)` | Inserts a new value to the set | | |
