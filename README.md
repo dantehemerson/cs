@@ -20,10 +20,6 @@
 | Quick     | O(n log(n))     | O(log(n))        | No     |
 | Heap      | O(n log(n))     | O(1)             | No     |
 
-## Considerations
-
-* Sometimes **TLE** can be due to using latests features of C++, like `auto`. Be causious with that.
-
 ### Cheatsheets:
 
 **CPP**:
