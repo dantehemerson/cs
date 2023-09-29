@@ -16,7 +16,6 @@ public:
                 l = m + 1;
             }
         }
-
         return res;
     }
 };
