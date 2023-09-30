@@ -62,6 +62,7 @@ Table with cpp types and their size and range in  a table:
 | **Vectors** | | | |
 | `vector<int> v{1, 2}` <br/> `vector<int> v = {1, 2}` | Initializes a vector with the given values. | | |
 | `vector<int> v(n, 1)` | Initializes a vector of size `n` with all values set to `1`. | | |
+| `vector<int> v(a.begin(), a.end())` | Initializes a vector from another vector. It includes elements from second.begin() up to, but **not including**, second.end(). | | |
 | `v.empty()` | Returns `true` or `false` depending on whether the vector is empty. | | |
 | `v.back()` | Returns the last element of the vector. Similar to `v[v.size() - 1]`. | | |
 | `v.front()` | Returns the first element of the vector. Similar to `v[0]`. | | |
