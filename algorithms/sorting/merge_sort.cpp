@@ -64,17 +64,10 @@ void merge(vector<int>& arr, int p, int q, int r) {
 void mergeSort(vector<int>& arr, int p, int r) {
   if (p >=  r) return;
 
-  // printArray(arr);
-
   int mid = p + (r - p) / 2;
-
-  cout << "before: array = " << p << " * " << r  << "     mid = " << mid << endl;
 
   mergeSort(arr, p, mid);
   mergeSort(arr, mid + 1, r);
-
-
-  cout << "after: array = " << p << " * " << r  << "     mid = " << mid << endl;
 
   merge(arr, p, mid, r);
 
