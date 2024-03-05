@@ -87,7 +87,7 @@ Table with cpp types and their size and range in  a table:
 | `s.pop_back()` | Removes the last character of the string. | | |
 | **Maps**(`unordered_map`) | | | |
 | `m.find(key) == m.end()` | Returns true if the **key is not found** in the map. | `O(1)` | `O(1)` |
-| `m.emplace(key, value)` (C++11) | Inserts a new key-value pair into the map. | `O(1)` | `O(1)` |
+| `m.emplace(key, value)` (C++11) or `m.insert({ key, value })` | Inserts a new key-value pair into the map. | `O(1)` | `O(1)` |
 | `if (m.count(key))` | Returns > 1 if the **key is found** in the map, or `0` if not found | `O(1)` | `O(1)` |
 | **Sets** | | | |
 | `s.insert(val)` | Inserts a new value to the set | | |
