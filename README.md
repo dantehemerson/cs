@@ -130,6 +130,12 @@ for(int& num: nums) {
     hashNums.emplace(num, true);
 }
 
+// Map of pairs
+unordered_map<int, pair<int, int>> counter;
+// Update or insert to the map
+if (counter.count(s[i])) counter[s[i]].second++;
+else counter[s[i]] = {i, 1};
+
 
 // Accessing to map:
 // 1. Using the [] operator on an unordered_map adds a new item with the specified key if it doesn't already exist, even when reading.
