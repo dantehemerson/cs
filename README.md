@@ -7,6 +7,10 @@
   <img src='http://academic.uprm.edu/computersociety/images/events/competitive-programming.png' />
 </p>
 
+## Add stdc++.h
+
+https://codeforces.com/blog/entry/109017
+
 
 
 ## Sorting Algorithms
@@ -135,6 +139,10 @@ unordered_map<int, pair<int, int>> counter;
 // Update or insert to the map
 if (counter.count(s[i])) counter[s[i]].second++;
 else counter[s[i]] = {i, 1};
+
+// In cpp if value of map is of type int, it will be initialized to 0,
+// so you can incremenet even if the key is not in the map
+counter["key"]++; // counter["key"] = 1
 
 
 // Accessing to map:
