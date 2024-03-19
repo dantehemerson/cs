@@ -45,6 +45,36 @@ void inOrderTreeWalkNonRecursiveStack(Node* root) {
   }
 }
 
+void morris(Node* root) {
+  if (root == nullptr) return;
+
+  Node* previous;
+  Node* current = root;
+
+
+  while (current) {
+    if (current->left == nullptr) {
+      cout << current->val << " ";
+      current = current->right;
+    } else {
+      previous = current->left;
+
+      while (previous->right && previous->right != current) {
+        previous = previous->right;
+      }
+
+      if (previous->right == nullptr) {
+        previous->right = current;
+        current = current->left;
+      } else {
+        previous->right = nullptr;
+        cout << current->val << " ";
+        current = current->right;
+      }
+    }
+  }
+}
+
 
 int main() {
 
@@ -73,6 +103,9 @@ int main() {
   cout << endl;
 
 
+  cout << "In Order Tree Walk (Morris): " << endl;
+  morris(root);
+  cout << endl;
 
 
 
