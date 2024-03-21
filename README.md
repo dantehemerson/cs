@@ -15,6 +15,9 @@ https://codeforces.com/blog/entry/109017
 
 ## Sorting Algorithms
 
+* [Visualize](https://visualgo.net/en/sorting)
+* [Big O](https://www.bigocheatsheet.com/)
+
 | Algorithm | Time Complexity | Space Complexity | Stable |
 | --------- | --------------- | ---------------- | ------ |
 | Bubble    | O(n^2)          | O(1)             | Yes    |
