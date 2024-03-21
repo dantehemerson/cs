@@ -25,6 +25,19 @@ https://codeforces.com/blog/entry/109017
 | Heap      | O(n log(n))     | O(1)             | No     |
 
 
+## Trees
+
+<img src="https://github.com/dantehemerson/cs/assets/18385321/b268d5f7-217f-4b03-85ee-24127014dc07" width="350">
+
+**Depth-first traversal (dotted path)** of a binary tree:
+
+Pre-order (node visited at position red 🔴):    `F, B, A, D, C, E, G, I, H`
+
+In-order (node visited at position green 🟢):   `A, B, C, D, E, F, G, H, I`
+
+Post-order (node visited at position blue 🔵):  `A, C, E, D, B, H, I, G, F`
+
+
 ## C++ Tips
 
 *  Be careful when reassigning a variable, use references instead, to avoid TLE.
