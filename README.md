@@ -25,9 +25,9 @@ https://codeforces.com/blog/entry/109017
 | Heap      | O(n log(n))     | O(1)             | No     |
 
 
-## Tips
+## C++ Tips
 
-* Be careful when reassigning a variable, use references instead, to avoid TLE.
+*  Be careful when reassigning a variable, use references instead, to avoid TLE.
 
 ### Cheatsheets:
 
