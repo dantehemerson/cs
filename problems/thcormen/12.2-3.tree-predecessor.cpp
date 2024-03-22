@@ -1,7 +1,6 @@
 /**
-Exercise 12.2-2
-Write recursive versions of TREE-MINIMUM and TREE-MAXIMUM
-
+Exercise 12.2-3
+Write the TREE-PREDECESSOR procedure.
 
 TREE-MAXIMUM(x)
   if x AND x.right != NIL:

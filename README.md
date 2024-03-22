@@ -40,6 +40,11 @@ In-order (node visited at position green 🟢):   `A, B, C, D, E, F, G, H, I`
 
 Post-order (node visited at position blue 🔵):  `A, C, E, D, B, H, I, G, F`
 
+---
+
+* **Types of Binary Trees**: https://towardsdatascience.com/5-types-of-binary-tree-with-cool-illustrations-9b335c430254
+
+
 
 ## C++ Tips
 
