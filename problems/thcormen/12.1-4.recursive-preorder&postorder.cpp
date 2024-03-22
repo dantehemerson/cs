@@ -18,11 +18,11 @@ public:
   int val;
 };
 
-void preOrderTreeWalk(Node* root) {
+void treeMinimum(Node* root) {
   if (root) {
     cout << root->val << " ";
-    preOrderTreeWalk(root->left);
-    preOrderTreeWalk(root->right);
+    treeMinimum(root->left);
+    treeMinimum(root->right);
   }
 }
 
@@ -52,7 +52,7 @@ int main() {
 
 
   cout << "Pre Order Tree Walk (recursive): " << endl;
-  preOrderTreeWalk(root);
+  treeMinimum(root);
   cout << endl;
 
 
