@@ -9,6 +9,7 @@
  */
 
 /**
+  Complexity: O(h)
   Save the path from the root to the node p in a set.
   Then, traverse the tree from the root to the node q and check if the current node is in the set.
   The more close to q the node is, the more likely it is the LCA.
