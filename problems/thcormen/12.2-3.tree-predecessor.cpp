@@ -2,15 +2,17 @@
 Exercise 12.2-3
 Write the TREE-PREDECESSOR procedure.
 
-TREE-MAXIMUM(x)
-  if x AND x.right != NIL:
-    TREE-MAXIMUM(x.right)
-  return x
 
-TREE-MINIMUM(x)
-  if x AND x.left != NIL:
-    TREE-MINIMUM(x.left)
-  return x
+TREE-PREDECESSOR(x)
+  if x.left != NIL
+    return TREE-MAXIMUM(x.left)
+
+  y=x.p
+  while y !=NIL and x == y.right
+    x=y
+    y=y.p
+
+  return y
 */
 #include <bits/stdc++.h>
 #include <iostream>
