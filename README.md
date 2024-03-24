@@ -1,11 +1,4 @@
-<h1 align='center'>Computer Science</h1>
-
-<p align="center">
-  <strong>Algorithms and Solved Problems</strong><br>
-</p>
-<p align='center'>
-  <img src='http://academic.uprm.edu/computersociety/images/events/competitive-programming.png' />
-</p>
+<h1 align='center'>Algorithms and Solved Problems</h1>
 
 ## Add stdc++.h
 
@@ -103,8 +96,16 @@ Table with cpp types and their size and range in  a table:
 | **Stacks** | | | |
 | `s.empty()` | Returns `true` or `false` depending on whether the stack is empty. | | |
 | `s.top()` | Returns the top element of the stack. | | |
+| `s.pop()` | Removes the top element(It doesn't return the deleted element.) | | |
 | `s.push(val)` | Adds a new element to the top of the stack. | | |
 | `s.emplace(1, 2)` | Similar to `s.push(make_pair(1, 2))`, or pass the params to any constructor. | | |
+| **Queues** | | | |
+| `q.empty()` | Returns `true` or `false` depending on whether the queue is empty. | | |
+| `q.front()` | Returns the front element of the queue. | | |
+| `q.back()` | Returns the back element of the queue. | | |
+| `q.pop()` | Removes the front element(It doesn't return the deleted element.) | | |
+| `q.push(val)` | Adds a new element to the back of the queue. | | |
+| `q.emplace(1, 2)` | Similar to `q.push(make_pair(1, 2))`, or pass the params to any constructor. | | |
 | **Strings** | | | |
 | `to_string(12.05)` | Converts the number to a string. | | |
 | `s.substr(start_index=m, length=n)` | Returns a substring of n characters starting at index m. | | |
