@@ -46,6 +46,7 @@ int main() {
 
 
   eulerTour(root);
+  // Output: 1 2 3 2 4 2 1
 
   return 0;
 }
