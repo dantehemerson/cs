@@ -5,7 +5,6 @@ using namespace std;
 class NodeTest {
 public:
   NodeTest(int _val): val(_val) {}
-
   NodeTest* left = nullptr;
   NodeTest* right = nullptr;
   int val;
@@ -14,7 +13,6 @@ public:
 void treeSalute() {
   cout << "hello world" << endl;
 }
-
 
 void printTree(const std::string& prefix, const NodeTest* node, bool isLeft) {
   if( node != nullptr ) {
