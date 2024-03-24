@@ -1,5 +1,5 @@
-def sayShit():
-  print('Your are a bitch')
+def sayLovelyPhrase():
+  print('Your are a nice person')
 
 
 def main():
@@ -9,4 +9,4 @@ def main():
     print('The item is ' + str(item))
 
 main()
-sayShit()
+sayLovelyPhrase()

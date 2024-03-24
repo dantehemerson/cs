@@ -1,0 +1,237 @@
+Statistical profiling result from isolate-0x118040000-47996-v8.log, (8911 ticks, 73 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     78    0.9%          /usr/lib/system/libsystem_malloc.dylib
+     56    0.6%          /usr/lib/system/libsystem_platform.dylib
+     22    0.2%          /usr/lib/system/libsystem_c.dylib
+     21    0.2%          /usr/lib/system/libsystem_pthread.dylib
+     15    0.2%          /usr/lib/libc++abi.dylib
+     10    0.1%          /usr/lib/system/libdyld.dylib
+      6    0.1%          /usr/lib/libc++.1.dylib
+      1    0.0%          /usr/lib/system/libsystem_kernel.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     95    1.1%    1.1%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+     71    0.8%    0.8%  LazyCompile: *_writeRaw node:_http_outgoing:390:19
+     41    0.5%    0.5%  LazyCompile: *parserOnIncoming node:_http_server:972:26
+     40    0.4%    0.5%  LazyCompile: *end node:_http_outgoing:992:45
+     38    0.4%    0.4%  LazyCompile: *Socket._writeGeneric node:net:899:42
+     36    0.4%    0.4%  LazyCompile: *parserOnHeadersComplete node:_http_common:72:33
+     31    0.3%    0.4%  LazyCompile: *onwrite node:internal/streams/writable:428:17
+     24    0.3%    0.3%  LazyCompile: *onRequest /Users/d/coding/repos/cs/node-playground/node-profiling.js:12:38
+     23    0.3%    0.3%  LazyCompile: *resume_ node:internal/streams/readable:996:17
+     23    0.3%    0.3%  LazyCompile: *readableAddChunk node:internal/streams/readable:242:26
+     23    0.3%    0.3%  LazyCompile: *onParserExecuteCommon node:_http_server:851:31
+     21    0.2%    0.2%  LazyCompile: *get node:_http_incoming:112:16
+     20    0.2%    0.2%  LazyCompile: *clearBuffer node:internal/streams/writable:532:21
+     19    0.2%    0.2%  LazyCompile: *setStreamTimeout node:internal/stream_base_commons:237:26
+     19    0.2%    0.2%  LazyCompile: *_storeHeader node:_http_outgoing:439:22
+     18    0.2%    0.2%  RegExp: [^\t\x20-\x7e\x80-\xff]
+     18    0.2%    0.2%  LazyCompile: *Readable.read node:internal/streams/readable:402:35
+     16    0.2%    0.2%  LazyCompile: *endReadable node:internal/streams/readable:1342:21
+     16    0.2%    0.2%  LazyCompile: *append node:internal/linkedlist:30:16
+     16    0.2%    0.2%  LazyCompile: *OutgoingMessage node:_http_outgoing:104:25
+     15    0.2%    0.2%  LazyCompile: *nextTick node:internal/process/task_queues:103:18
+     15    0.2%    0.2%  LazyCompile: *emit node:events:460:44
+     15    0.2%    0.2%  LazyCompile: *ReadableState node:internal/streams/readable:83:23
+     14    0.2%    0.2%  LazyCompile: *endReadableNT node:internal/streams/readable:1352:23
+     14    0.2%    0.2%  LazyCompile: *afterWriteTick node:internal/streams/writable:485:24
+     12    0.1%    0.1%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+     12    0.1%    0.1%  LazyCompile: *write_ node:_http_outgoing:872:16
+     12    0.1%    0.1%  LazyCompile: *socketListenerWrap node:_http_server:1122:37
+     12    0.1%    0.1%  LazyCompile: *doWrite node:internal/streams/writable:401:17
+     11    0.1%    0.1%  LazyCompile: *matchKnownFields node:_http_incoming:279:26
+     11    0.1%    0.1%  LazyCompile: *IncomingMessage node:_http_incoming:53:25
+      9    0.1%    0.1%  LazyCompile: *onParserExecute node:_http_server:790:25
+      9    0.1%    0.1%  LazyCompile: *get node:internal/bootstrap/node:92:8
+      8    0.1%    0.1%  LazyCompile: *resOnFinish node:_http_server:914:21
+      8    0.1%    0.1%  LazyCompile: *parserOnMessageComplete node:_http_common:137:33
+      8    0.1%    0.1%  LazyCompile: *onFinish node:_http_outgoing:987:18
+      8    0.1%    0.1%  LazyCompile: *clearIncoming node:_http_server:901:23
+      7    0.1%    0.1%  LazyCompile: *nop node:internal/streams/writable:73:13
+      7    0.1%    0.1%  LazyCompile: *_flush node:_http_outgoing:1097:51
+      7    0.1%    0.1%  LazyCompile: *Timeout node:internal/timers:169:14
+      7    0.1%    0.1%  LazyCompile: *Readable.resume node:internal/streams/readable:975:37
+      6    0.1%    0.1%  LazyCompile: *removeListener node:events:675:28
+      5    0.1%    0.1%  LazyCompile: *removeAllListeners node:events:735:32
+      5    0.1%    0.1%  LazyCompile: *emitReadable_ node:internal/streams/readable:586:23
+      4    0.0%    0.0%  LazyCompile: *slowCases node:internal/util:180:19
+      3    0.0%    0.0%  LazyCompile: *processPromiseRejections node:internal/process/promises:220:34
+      2    0.0%    0.0%  LazyCompile: *emitCloseNT node:internal/streams/destroy:120:21
+      2    0.0%    0.0%  LazyCompile: *emitCloseNT node:_http_server:961:21
+      2    0.0%    0.0%  LazyCompile: *checkError node:internal/streams/destroy:23:20
+      1    0.0%    0.0%  LazyCompile: *nop node:_http_outgoing:93:13
+      1    0.0%    0.0%  LazyCompile: *getObserverType node:internal/perf/observe:129:25
+      1    0.0%    0.0%  LazyCompile: *getHighWaterMark node:internal/streams/state:19:26
+      1    0.0%    0.0%  Function: ^writeOrBuffer node:internal/streams/writable:368:23
+      1    0.0%    0.0%  Function: ^setStreamTimeout node:internal/stream_base_commons:237:26
+      1    0.0%    0.0%  Function: ^noop node:internal/util/debuglog:47:14
+      1    0.0%    0.0%  Function: ^getHighWaterMark node:internal/streams/state:19:26
+      1    0.0%    0.0%  Function: ^doWrite node:internal/streams/writable:401:17
+
+ [C++]:
+   ticks  total  nonlib   name
+   2682   30.1%   30.8%  T ___munmap
+   2366   26.6%   27.2%  T node::contextify::ContextifyContext::Get(v8::Local<v8::Object>)
+   2062   23.1%   23.7%  T _mach_continuous_time
+    277    3.1%    3.2%  T _thread_info
+     54    0.6%    0.6%  T _semaphore_destroy
+     29    0.3%    0.3%  T _kdebug_trace
+     28    0.3%    0.3%  T __os_semaphore_create
+     27    0.3%    0.3%  T node::builtins::BuiltinLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     25    0.3%    0.3%  t void std::__1::__tree_remove<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+     21    0.2%    0.2%  T __simple_asl_send
+     16    0.2%    0.2%  T node::ParseEncoding(char const*, node::encoding)
+     14    0.2%    0.2%  T node::InternalCallbackScope::Close()
+     12    0.1%    0.1%  T node::AsyncHooks::push_async_context(double, double, v8::Local<v8::Object>)
+     12    0.1%    0.1%  T _mach_right_send_release
+     11    0.1%    0.1%  t std::__1::vector<unsigned long, std::__1::allocator<unsigned long>>::__append(unsigned long)
+     10    0.1%    0.1%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+     10    0.1%    0.1%  T node::ParseEncoding(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+     10    0.1%    0.1%  T node::AsyncHooks::pop_async_context(double)
+      7    0.1%    0.1%  t _udec
+      7    0.1%    0.1%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      7    0.1%    0.1%  T node::InternalCallbackScope::InternalCallbackScope(node::AsyncWrap*, int)
+      7    0.1%    0.1%  T _fsgetpath
+      6    0.1%    0.1%  T node::Emit(node::Environment*, double, node::AsyncHooks::Fields, v8::Local<v8::Function>)
+      5    0.1%    0.1%  t __pthread_mutex_check_init_slow
+      5    0.1%    0.1%  T node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context)
+      5    0.1%    0.1%  T _setxattr
+      5    0.1%    0.1%  T _mach_vm_map
+      4    0.0%    0.0%  T node::NodeArrayBufferAllocator::Allocate(unsigned long)
+      3    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+      3    0.0%    0.0%  T _task_restartable_ranges_register
+      3    0.0%    0.0%  T _os_unfair_recursive_lock_trylock
+      2    0.0%    0.0%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char>> std::__1::__pad_and_output<char, std::__1::char_traits<char>>(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char>>, char const*, char const*, char const*, std::__1::ios_base&, char)
+      2    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t __simple_asl_escape_val
+      2    0.0%    0.0%  T node::NodeArrayBufferAllocator::Free(void*, unsigned long)
+      2    0.0%    0.0%  T node::Buffer::Length(v8::Local<v8::Value>)
+      2    0.0%    0.0%  T node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+      2    0.0%    0.0%  T node::AsyncWrap::IsDoneInitializing() const
+      2    0.0%    0.0%  T node::AsyncHooks::DefaultTriggerAsyncIdScope::~DefaultTriggerAsyncIdScope()
+      2    0.0%    0.0%  T _mach_voucher_extract_attr_recipe
+      2    0.0%    0.0%  T _mach_port_extract_member
+      2    0.0%    0.0%  T _kdebug_typefilter
+      1    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::InternalCallbackScope::~InternalCallbackScope()
+      1    0.0%    0.0%  T node::Environment::GetNow()
+      1    0.0%    0.0%  T node::Buffer::Data(v8::Local<v8::Value>)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventBefore()
+      1    0.0%    0.0%  T node::AsyncHooks::DefaultTriggerAsyncIdScope::DefaultTriggerAsyncIdScope(node::AsyncWrap*)
+      1    0.0%    0.0%  T __pthread_clear_qos_tsd
+      1    0.0%    0.0%  T ___pthread_init
+
+ [Summary]:
+   ticks  total  nonlib   name
+    866    9.7%   10.0%  JavaScript
+   7763   87.1%   89.2%  C++
+    223    2.5%    2.6%  GC
+    209    2.3%          Shared libraries
+     73    0.8%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   2682   63.0%   30.1%  T ___munmap
+   1428   33.6%   16.0%  T node::contextify::ContextifyContext::Get(v8::Local<v8::Object>)
+     27    0.6%    0.3%  T node::builtins::BuiltinLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     27    0.6%    0.3%  T __os_semaphore_create
+     16    0.4%    0.2%  T node::ParseEncoding(char const*, node::encoding)
+     13    0.3%    0.1%  T _kdebug_trace
+     10    0.2%    0.1%  T node::ParseEncoding(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+      7    0.2%    0.1%  T _fsgetpath
+      5    0.1%    0.1%  t _udec
+      4    0.1%    0.0%  T node::NodeArrayBufferAllocator::Allocate(unsigned long)
+      4    0.1%    0.0%  T _setxattr
+      4    0.1%    0.0%  T __simple_asl_send
+      3    0.1%    0.0%  t __pthread_mutex_check_init_slow
+      3    0.1%    0.0%  T _os_unfair_recursive_lock_trylock
+      2    0.0%    0.0%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char>> std::__1::__pad_and_output<char, std::__1::char_traits<char>>(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char>>, char const*, char const*, char const*, std::__1::ios_base&, char)
+      2    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::NodeArrayBufferAllocator::Free(void*, unsigned long)
+      2    0.0%    0.0%  T node::Buffer::Length(v8::Local<v8::Value>)
+      2    0.0%    0.0%  T node::AsyncWrap::IsDoneInitializing() const
+      2    0.0%    0.0%  T node::AsyncHooks::DefaultTriggerAsyncIdScope::~DefaultTriggerAsyncIdScope()
+      2    0.0%    0.0%  T _task_restartable_ranges_register
+      2    0.0%    0.0%  T _mach_vm_map
+      2    0.0%    0.0%  T _mach_port_extract_member
+      1    0.0%    0.0%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+      1    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::Environment::GetNow()
+      1    0.0%    0.0%  T node::Buffer::Data(v8::Local<v8::Value>)
+      1    0.0%    0.0%  T node::AsyncHooks::DefaultTriggerAsyncIdScope::DefaultTriggerAsyncIdScope(node::AsyncWrap*)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   2682   30.1%  T ___munmap
+   2669   99.5%    LazyCompile: *Socket._writeGeneric node:net:899:42
+   2661   99.7%      LazyCompile: *doWrite node:internal/streams/writable:401:17
+   2661  100.0%        LazyCompile: *end node:_http_outgoing:992:45
+   2661  100.0%          LazyCompile: *onRequest /Users/d/coding/repos/cs/node-playground/node-profiling.js:12:38
+   2661  100.0%            LazyCompile: *emit node:events:460:44
+
+   2366   26.6%  T node::contextify::ContextifyContext::Get(v8::Local<v8::Object>)
+    761   32.2%    LazyCompile: *Socket._writeGeneric node:net:899:42
+    761  100.0%      LazyCompile: *doWrite node:internal/streams/writable:401:17
+    761  100.0%        LazyCompile: *end node:_http_outgoing:992:45
+    761  100.0%          LazyCompile: *onRequest /Users/d/coding/repos/cs/node-playground/node-profiling.js:12:38
+    761  100.0%            LazyCompile: *emit node:events:460:44
+     80    3.4%    LazyCompile: *parserOnIncoming node:_http_server:972:26
+     80  100.0%      LazyCompile: *parserOnHeadersComplete node:_http_common:72:33
+     65    2.7%    LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+     53    2.2%    LazyCompile: *end node:_http_outgoing:992:45
+     53  100.0%      LazyCompile: *onRequest /Users/d/coding/repos/cs/node-playground/node-profiling.js:12:38
+     53  100.0%        LazyCompile: *emit node:events:460:44
+     53  100.0%          LazyCompile: *parserOnIncoming node:_http_server:972:26
+     53  100.0%            LazyCompile: *parserOnHeadersComplete node:_http_common:72:33
+     50    2.1%    LazyCompile: *write_ node:_http_outgoing:872:16
+     50  100.0%      LazyCompile: *end node:_http_outgoing:992:45
+     50  100.0%        LazyCompile: *onRequest /Users/d/coding/repos/cs/node-playground/node-profiling.js:12:38
+     50  100.0%          LazyCompile: *emit node:events:460:44
+     50  100.0%            LazyCompile: *parserOnIncoming node:_http_server:972:26
+     48    2.0%    LazyCompile: *get node:_http_incoming:112:16
+     48  100.0%      LazyCompile: *parserOnIncoming node:_http_server:972:26
+     48  100.0%        LazyCompile: *parserOnHeadersComplete node:_http_common:72:33
+     46    1.9%    LazyCompile: *onRequest /Users/d/coding/repos/cs/node-playground/node-profiling.js:12:38
+     46  100.0%      LazyCompile: *emit node:events:460:44
+     46  100.0%        LazyCompile: *parserOnIncoming node:_http_server:972:26
+     46  100.0%          LazyCompile: *parserOnHeadersComplete node:_http_common:72:33
+     33    1.4%    LazyCompile: *parserOnHeadersComplete node:_http_common:72:33
+     31    1.3%    LazyCompile: *resOnFinish node:_http_server:914:21
+     31  100.0%      LazyCompile: *onFinish node:_http_outgoing:987:18
+     31  100.0%        LazyCompile: *afterWriteTick node:internal/streams/writable:485:24
+     31  100.0%          LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+     29    1.2%    LazyCompile: *emit node:events:460:44
+     18   62.1%      LazyCompile: *parserOnIncoming node:_http_server:972:26
+     18  100.0%        LazyCompile: *parserOnHeadersComplete node:_http_common:72:33
+     10   34.5%      LazyCompile: *end node:_http_outgoing:992:45
+      9   90.0%        LazyCompile: *onRequest /Users/d/coding/repos/cs/node-playground/node-profiling.js:12:38
+      9  100.0%          LazyCompile: *emit node:events:460:44
+      9  100.0%            LazyCompile: *parserOnIncoming node:_http_server:972:26
+      1   10.0%        Function: ^onRequest /Users/d/coding/repos/cs/node-playground/node-profiling.js:12:38
+      1  100.0%          LazyCompile: *emit node:events:460:44
+      1  100.0%            LazyCompile: *parserOnIncoming node:_http_server:972:26
+      1    3.4%      Function: ^onFinish node:_http_outgoing:987:18
+      1  100.0%        LazyCompile: *callback node:internal/streams/writable:553:44
+      1  100.0%          Function: ^afterWrite node:internal/streams/writable:490:20
+      1  100.0%            Function: ^afterWriteTick node:internal/streams/writable:485:24
+     27    1.1%    LazyCompile: *setStreamTimeout node:internal/stream_base_commons:237:26
+     25   92.6%      LazyCompile: *resOnFinish node:_http_server:914:21
+     25  100.0%        LazyCompile: *onFinish node:_http_outgoing:987:18
+     25  100.0%          LazyCompile: *afterWriteTick node:internal/streams/writable:485:24
+     25  100.0%            LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      2    7.4%      LazyCompile: *parserOnIncoming node:_http_server:972:26
+      2  100.0%        LazyCompile: *parserOnHeadersComplete node:_http_common:72:33
+
+   2062   23.1%  T _mach_continuous_time
+
+    277    3.1%  T _thread_info
+
+     95    1.1%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+

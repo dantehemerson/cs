@@ -8,6 +8,11 @@
     "iostream": "cpp",
     "vector": "cpp"
   },
+  "files.exclude": {
+    "**/builds": true,
+    "**/node_modules": true,
+    "**/*.log": true
+  },
   "editor.formatOnSave": false,
   // To support intellisense for C++17:
   "clangd.arguments": [

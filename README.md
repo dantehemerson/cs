@@ -7,9 +7,16 @@
   <img src='http://academic.uprm.edu/computersociety/images/events/competitive-programming.png' />
 </p>
 
+## Add stdc++.h
+
+https://codeforces.com/blog/entry/109017
+
 
 
 ## Sorting Algorithms
+
+* [Visualize](https://visualgo.net/en/sorting)
+* [Big O](https://www.bigocheatsheet.com/)
 
 | Algorithm | Time Complexity | Space Complexity | Stable |
 | --------- | --------------- | ---------------- | ------ |
@@ -19,6 +26,29 @@
 | Merge     | O(n log(n))     | O(n)             | Yes    |
 | Quick     | O(n log(n))     | O(log(n))        | No     |
 | Heap      | O(n log(n))     | O(1)             | No     |
+
+
+## Trees
+
+<img src="https://github.com/dantehemerson/cs/assets/18385321/b268d5f7-217f-4b03-85ee-24127014dc07" width="350">
+
+**Depth-first traversal (dotted path)** of a binary tree:
+
+Pre-order (node visited at position red 🔴):    `F, B, A, D, C, E, G, I, H`
+
+In-order (node visited at position green 🟢):   `A, B, C, D, E, F, G, H, I`
+
+Post-order (node visited at position blue 🔵):  `A, C, E, D, B, H, I, G, F`
+
+---
+
+* **Types of Binary Trees**: https://towardsdatascience.com/5-types-of-binary-tree-with-cool-illustrations-9b335c430254
+
+
+
+## C++ Tips
+
+*  Be careful when reassigning a variable, use references instead, to avoid TLE.
 
 ### Cheatsheets:
 
@@ -54,15 +84,22 @@ Table with cpp types and their size and range in  a table:
 | `min(a, b)` | Returns the minimum of a and b. | | |
 | `max(a, b)` | Returns the maximum of a and b. | | |
 | `max_element(v.begin(), v.end(), [](int a, int b) { return a < b; })` | Returns an iterator pointing to the element with the largest value in the vector. | `O(n)` | `O(1)` |
+| `accumulate(v.begin(), v.end(), 0, [](int a, int b) { return a + b; })` | Returns the sum of all elements in the vector. | `O(n)` | `O(1)` |
 | **Vectors** | | | |
 | `vector<int> v{1, 2}` <br/> `vector<int> v = {1, 2}` | Initializes a vector with the given values. | | |
 | `vector<int> v(n, 1)` | Initializes a vector of size `n` with all values set to `1`. | | |
+| `vector<int> v(a.begin(), a.end())` | Initializes a vector from another vector. It includes elements from `a.begin()` up to, but **not including**, `a.end()`. | | |
 | `v.empty()` | Returns `true` or `false` depending on whether the vector is empty. | | |
 | `v.back()` | Returns the last element of the vector. Similar to `v[v.size() - 1]`. | | |
 | `v.front()` | Returns the first element of the vector. Similar to `v[0]`. | | |
 | `v.pop_back(val)` | Removes the last element of the vector. | | |
 | `v.push_front(val)` | Adds a new element to the beginning of the vector. | | |
 | `sort(v.begin(), v.end())` | Sorts the vector. In `vector<pair<A, B>>`, by default it sorts by the first element of pairs. | | |
+| **Tuple** | | | |
+| `tuple<int, int, int> t{1, 2, 3}` | Initializes a tuple with the given values. | | |
+| `tuple<int, int, int> t = {1, 2, 3}` | Initializes a tuple with the given values. | | |
+| `make_tuple(1, 2, 3)` | (No member function) Creates a tuple with the given values. | | |
+| `get<0>(t)` |(No member function) Returns the first element of the tuple. | | |
 | **Stacks** | | | |
 | `s.empty()` | Returns `true` or `false` depending on whether the stack is empty. | | |
 | `s.top()` | Returns the top element of the stack. | | |
@@ -75,7 +112,7 @@ Table with cpp types and their size and range in  a table:
 | `s.pop_back()` | Removes the last character of the string. | | |
 | **Maps**(`unordered_map`) | | | |
 | `m.find(key) == m.end()` | Returns true if the **key is not found** in the map. | `O(1)` | `O(1)` |
-| `m.emplace` (C++11) | Inserts a new key-value pair into the map. | `O(1)` | `O(1)` |
+| `m.emplace(key, value)` (C++11) or `m.insert({ key, value })` | Inserts a new key-value pair into the map. | `O(1)` | `O(1)` |
 | `if (m.count(key))` | Returns > 1 if the **key is found** in the map, or `0` if not found | `O(1)` | `O(1)` |
 | **Sets** | | | |
 | `s.insert(val)` | Inserts a new value to the set | | |
@@ -117,6 +154,16 @@ unordered_map<int, bool> hashNums;
 for(int& num: nums) {
     hashNums.emplace(num, true);
 }
+
+// Map of pairs
+unordered_map<int, pair<int, int>> counter;
+// Update or insert to the map
+if (counter.count(s[i])) counter[s[i]].second++;
+else counter[s[i]] = {i, 1};
+
+// In cpp if value of map is of type int, it will be initialized to 0,
+// so you can incremenet even if the key is not in the map
+counter["key"]++; // counter["key"] = 1
 
 
 // Accessing to map:
