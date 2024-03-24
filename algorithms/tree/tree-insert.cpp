@@ -1,35 +1,14 @@
 #include <bits/stdc++.h>
 #include <iostream>
 #include <iomanip>
+#include "../../libs/cpp/tree.hpp"
 
 using namespace std;
 
-class Node {
-public:
-  Node(int _val): val(_val) {}
 
-  Node* left = nullptr;
-  Node* right = nullptr;
-  int val;
-};
-
-void printTree(const std::string& prefix, const Node* node, bool isLeft) {
-  if( node != nullptr ) {
-    cout << prefix;
-    cout << (isLeft ? "├──" : "└──" );
-    cout << node->val << std::endl;
-    printTree( prefix + (isLeft ? "│   " : "    "), node->left, true);
-    printTree( prefix + (isLeft ? "│   " : "    "), node->right, false);
-  }
-}
-
-void printTree(const Node* node) {
-  printTree("", node, false);
-}
-
-void treeInsert(Node*& root, int val) {
-  Node* current = root;
-  Node* parent = nullptr;
+void treeInsert(NodeTest*& root, int val) {
+  NodeTest* current = root;
+  NodeTest* parent = nullptr;
 
   while (current) {
     parent = current;
@@ -43,25 +22,25 @@ void treeInsert(Node*& root, int val) {
 
 
   if (!parent) {
-   root = new Node(val);
+   root = new NodeTest(val);
   } else if (val < parent->val)  {
-    parent->left = new Node(val);
+    parent->left = new NodeTest(val);
   } else {
-    parent->right = new Node(val);
+    parent->right = new NodeTest(val);
   }
 }
 
 int main() {
 
-  Node* root = new Node(12);
-  root->left = new Node(5);
-  root->right = new Node(18);
-  root->left->left = new Node(2);
-  root->left->right = new Node(9);
-  root->right->left = new Node(15);
-  root->right->right = new Node(19);
-  root->right->left->left = new Node(13);
-  root->right->left->right = new Node(17);
+  NodeTest* root = new NodeTest(12);
+  root->left = new NodeTest(5);
+  root->right = new NodeTest(18);
+  root->left->left = new NodeTest(2);
+  root->left->right = new NodeTest(9);
+  root->right->left = new NodeTest(15);
+  root->right->right = new NodeTest(19);
+  root->right->left->left = new NodeTest(13);
+  root->right->left->right = new NodeTest(17);
 
   printTree(root);
 
@@ -74,7 +53,7 @@ int main() {
   printTree(root);
 
 
-  Node* root2 = nullptr;
+  NodeTest* root2 = nullptr;
 
   treeInsert(root2, 5);
 
