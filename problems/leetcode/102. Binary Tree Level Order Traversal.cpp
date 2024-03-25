@@ -9,7 +9,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
- //  BFS: Time: O(n) Space: O(n)
+ //  Using Breadth-First Search: Time: O(n) Space: O(n)
 class Solution {
 public:
 
