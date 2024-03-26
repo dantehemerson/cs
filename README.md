@@ -119,7 +119,7 @@ Table with cpp types and their size and range in  a table:
 | `s.insert(val)` | Inserts a new value to the set | | |
 | `s.erase(val)` | Deleted a value to the set | | |
 | `s.count(val)` | Returns > 1 if the **`val` is found** in the set, or `0` if not found | `O(1)` | `O(1)` |
-| **Limits** | in `limits` and `climits` header | | |
+| **Limits** | | | |
 | `numeric_limits<int>::max()` or `INT_MAX` | Returns the maximum value of an integer. | | |
 | `numeric_limits<int>::min()` or `INT_MIN` | Returns the minimum value of an integer. | | |
 
