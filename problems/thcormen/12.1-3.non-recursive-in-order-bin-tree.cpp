@@ -33,7 +33,6 @@ void inOrderTreeWalkNonRecursiveStack(NodeTest* root) {
   NodeTest* current = root;
   stack<NodeTest*> stack;
 
-
   while (current) {
     stack.push(current);
 
