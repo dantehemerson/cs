@@ -3,17 +3,17 @@
 
 using namespace std;
 
-class Node {
+class NodeTest {
 public:
-  Node(int _val): val(_val) {}
+  NodeTest(int _val): val(_val) {}
 
-  Node* left = nullptr;
-  Node* right = nullptr;
+  NodeTest* left = nullptr;
+  NodeTest* right = nullptr;
 
   int val;
 };
 
-void eulerTour(Node* root) {
+void eulerTour(NodeTest* root) {
   if (!root) return;
 
   cout << root->val << " ";
@@ -32,10 +32,10 @@ void eulerTour(Node* root) {
 int main() {
 
 
-  Node* root = new Node(1);
-  root->left = new Node(2);
-  root->left->left = new Node(3);
-  root->left->right = new Node(4);
+  NodeTest* root = new NodeTest(1);
+  root->left = new NodeTest(2);
+  root->left->left = new NodeTest(3);
+  root->left->right = new NodeTest(4);
 
   // Tree Structure:
   //     1

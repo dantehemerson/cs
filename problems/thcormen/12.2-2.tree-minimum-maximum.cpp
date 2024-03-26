@@ -19,16 +19,16 @@ TREE-MINIMUM(x)
 
 using namespace std;
 
-class Node {
+class NodeTest {
 public:
-  Node(int _val):val(_val) {}
+  NodeTest(int _val):val(_val) {}
 
-  Node* left = nullptr;
-  Node* right = nullptr;
+  NodeTest* left = nullptr;
+  NodeTest* right = nullptr;
   int val;
 };
 
-Node* treeMinimum(Node* root) {
+NodeTest* treeMinimum(NodeTest* root) {
   if (root && root->left != nullptr) {
     return treeMinimum(root->left);
   }
@@ -37,7 +37,7 @@ Node* treeMinimum(Node* root) {
 }
 
 
-Node* treeMaximum(Node* root) {
+NodeTest* treeMaximum(NodeTest* root) {
   if (root && root->right != nullptr) {
     return treeMaximum(root->right);
   }
@@ -54,21 +54,21 @@ int main() {
      / \     \
     2   5     8
   */
-  auto root = new Node(6);
-  root->left = new Node(5);
-  root->left->left = new Node(2);
-  root->left->right = new Node(5);
-  root->right = new Node(7);
-  root->right->right = new Node(8);
+  auto root = new NodeTest(6);
+  root->left = new NodeTest(5);
+  root->left->left = new NodeTest(2);
+  root->left->right = new NodeTest(5);
+  root->right = new NodeTest(7);
+  root->right->right = new NodeTest(8);
 
 
   cout << "Tree Minimum (recursive): " << endl;
-  Node* minimum = treeMinimum(root);
+  NodeTest* minimum = treeMinimum(root);
   cout << minimum->val << endl;
 
 
   cout << "Tree Maximum (recursive): " << endl;
-  Node* maximum = treeMaximum(root);
+  NodeTest* maximum = treeMaximum(root);
   cout << maximum->val << endl;
 
   return 0;

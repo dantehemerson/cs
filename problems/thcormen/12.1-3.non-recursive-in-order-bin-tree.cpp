@@ -12,16 +12,16 @@ Give a nonrecursive algorithm that performs an inorder tree walk.
 
 using namespace std;
 
-class Node {
+class NodeTest {
 public:
-  Node(int _val):val(_val) {}
+  NodeTest(int _val):val(_val) {}
 
-  Node* left = nullptr;
-  Node* right = nullptr;
+  NodeTest* left = nullptr;
+  NodeTest* right = nullptr;
   int val;
 };
 
-void treeMinimum(Node* root) {
+void treeMinimum(NodeTest* root) {
   if (root) {
     treeMinimum(root->left);
     cout << root->val << " ";
@@ -29,10 +29,9 @@ void treeMinimum(Node* root) {
   }
 }
 
-void inOrderTreeWalkNonRecursiveStack(Node* root) {
-  Node* current = root;
-  stack<Node*> stack;
-
+void inOrderTreeWalkNonRecursiveStack(NodeTest* root) {
+  NodeTest* current = root;
+  stack<NodeTest*> stack;
 
   while (current) {
     stack.push(current);
@@ -40,7 +39,7 @@ void inOrderTreeWalkNonRecursiveStack(Node* root) {
     current = current->left;
 
     while (current == nullptr && !stack.empty()) {
-      Node* top = stack.top();
+      NodeTest* top = stack.top();
       stack.pop();
 
       cout << top->val << " ";
@@ -50,9 +49,9 @@ void inOrderTreeWalkNonRecursiveStack(Node* root) {
   }
 }
 
-void inOrderTreeWalkNonRecursiveStack2(Node* root) {
-  Node* current = root;
-  stack<Node*> stack;
+void inOrderTreeWalkNonRecursiveStack2(NodeTest* root) {
+  NodeTest* current = root;
+  stack<NodeTest*> stack;
 
 
   while (!stack.empty() || current != nullptr) {
@@ -60,7 +59,7 @@ void inOrderTreeWalkNonRecursiveStack2(Node* root) {
       stack.push(current);
       current = current->left;
     } else {
-      Node* top = stack.top();
+      NodeTest* top = stack.top();
       stack.pop();
       current = top;
 
@@ -71,11 +70,11 @@ void inOrderTreeWalkNonRecursiveStack2(Node* root) {
   }
 }
 
-void morris(Node* root) {
+void morris(NodeTest* root) {
   if (root == nullptr) return;
 
-  Node* previous;
-  Node* current = root;
+  NodeTest* previous;
+  NodeTest* current = root;
 
 
   while (current) {
@@ -111,12 +110,12 @@ int main() {
      / \     \
     2   5     8
   */
-  auto root = new Node(6);
-  root->left = new Node(5);
-  root->left->left = new Node(2);
-  root->left->right = new Node(5);
-  root->right = new Node(7);
-  root->right->right = new Node(8);
+  auto root = new NodeTest(6);
+  root->left = new NodeTest(5);
+  root->left->left = new NodeTest(2);
+  root->left->right = new NodeTest(5);
+  root->right = new NodeTest(7);
+  root->right->right = new NodeTest(8);
 
 
   cout << "In Order Tree Walk (recursive): " << endl;
